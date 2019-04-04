@@ -24,6 +24,8 @@ bios_setup:
 	mov ah, 0Ch		; set video mode
 	mov bh, 0		; set output vga
 	mov al, 0		; set initial color
+	mov cx, 0		; x = 0
+	mov dx, 0		; y = 0
 
 ; call the BIOS to draw
 draw:
